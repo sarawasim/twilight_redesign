@@ -15,8 +15,8 @@ nav a {
 }
 
 .featuredMovie img {
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 98%;
 }
 
 .movies{
