@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sarawasim/twilight_redesign#readme",
   "dependencies": {
+    "browserify": "^17.0.0",
     "postal-codes-js": "^2.5.2"
   }
 }
