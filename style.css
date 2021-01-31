@@ -15,8 +15,8 @@ nav a {
 }
 
 .featuredMovie img {
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .movies{
@@ -27,6 +27,7 @@ nav a {
   justify-content: center;
   padding: 10px;
   text-align: left;
+  width: 50%;
 }
 
 .movieCard img {
@@ -40,8 +41,9 @@ nav a {
 }
 
 .movieCard a {
+  display: block;
   color: white;
-  margin-left:10px;
+  margin: auto;
 }
 
 @media screen and (max-width: 600px) {
