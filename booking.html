@@ -24,7 +24,7 @@
                      <div class="row">
                         <div class="input-field col s12">
                            <i class="material-icons prefix">email</i>
-                           <input placeholder="Email" id="email" type="email" class="validate">
+                           <input placeholder="Email" id="email" type="email" class="validate" required>
                            <label for="email">Email</label>
                         </div>
                      </div>
@@ -40,20 +40,25 @@
                      <div class="row">
                         <div class="input-field col s12">
                            <i class="material-icons prefix">credit_card</i>
+<<<<<<< HEAD
                            <input placeholder="1234 1234 1234 1234" id="card-number" type="text" class="validate">
                            <label for="card-number">Card Number</label>
+=======
+                           <input placeholder="1234 1234 1234 1234" id="card-number" type="text" class="validate" required>
+                           <label for="card-number">Card Holder Name</label>
+>>>>>>> b8731928a8d098c8ee506d3e936cd80f6591b231
                         </div>
                      </div>
                      <!-- Expiration & CVC -->
                      <div class="row">
                         <div class="input-field col s6">
                            <i class="material-icons prefix">date_range</i>
-                           <input placeholder="MM/YY" id="expiry" type="text" class="validate">
+                           <input placeholder="MM/YY" id="expiry" type="text" class="validate" maxlength="5" required>
                            <label for="expiry">Exp</label>
                         </div>
                         <div class="input-field col s6">
                            <i class="material-icons prefix">fingerprint</i>
-                           <input placeholder="CVC" id="cvc" type="text" class="validate">
+                           <input placeholder="CVC" id="cvc" type="text" class="validate" maxlength="4" required>
                            <label for="cvc">CVC</label>
                         </div>
                      </div>
@@ -61,19 +66,19 @@
                      <div class="row">
                         <div class="input-field col s12">
                            <i class="material-icons prefix">language</i>
-                           <select>
+                           <select name="country" id="country" required>
                               <option value="" disabled selected>Choose your option</option>
                               <option value="1">Canada</option>
                               <option value="2">United States</option>
                               <option value="3">United Kingdom</option>
                            </select>
-                           <label>Country</label>
+                           <label for="country">Country</label>
                         </div>
                         <!-- Zip Code-->
                         <div class="row">
                            <div class="input-field col s12">
                               <i class="material-icons prefix">location_on</i>
-                              <input placeholder="A1B 2C3" id="postal-code" type="text" class="validate">
+                              <input placeholder="A1B 2C3" id="postal-code" type="text" class="validate" maxlength="7" required>
                               <label for="postal-code">Postal Code</label>
                            </div>
                         </div>
