@@ -101,6 +101,14 @@ footer li {
 
 }
 
+.movieCard img {
+    transition: transform .2s;;
+}
+
+.movieCard img:hover {
+    transform: scale(1.3);
+}
+
 @media screen and (max-width: 600px) {
     .movieCard {
         width: 80%;
