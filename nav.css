@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=PT+Sans&family=Rubik&display=swap');
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(73,13,102,1) 54%);
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#logo {
+    width: 200px;
+}
+
+h2 {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+li {
+    padding: 1vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding-top: 1.5vh;
+}
+
+nav {
+    background: white;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+nav a {
+    color: #757575;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #353535;
+    border-bottom: 3px solid;
+}
+
+footer {
+    height: 15vh;
+    background: #0a0613;
+}
+
+footer a, 
+.movieCard a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: #959595;
+    border-bottom: 3px solid;
+}
+
+footer ul {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2vh;
+    
+}
+
+footer li {
+    list-style: none;
+    padding: 5px;
+}
+
+.movieCard {
+    padding-bottom: 5vh;
+}
+
+.movieCard a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.movieCard a:hover {
+    color: gold;
+
+}
+
+.movieCard img {
+    transition: transform .2s;;
+}
+
+.movieCard img:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 600px) {
+    .movieCard {
+        width: 80%;
+        margin: auto;
+    }
+}
