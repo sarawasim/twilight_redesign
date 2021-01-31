@@ -43,7 +43,6 @@ nav a {
 .movieCard a {
   display: block;
   color: white;
-  margin: auto;
 }
 
 @media screen and (max-width: 600px) {
