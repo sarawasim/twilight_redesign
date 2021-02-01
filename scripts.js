@@ -1,21 +1,33 @@
+const M = require("minimatch");
+
+/**
+ * Materialize related inits
+ */
 var elem = document.querySelector('.tabs');
 var options = {}
 var instance = M.Tabs.init(elem, options);
 
-// For Form selects
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems, options);
+  M.FormSelect.init(elems, options);
 });
 
 
-/**
- * @Megan - You can do form validation here
- */
+// 
 const form = document.getElementById('payment-form');
-form.onsubmit = submit;
+
+form.addEventListener("submit", submit);
+document.getElementById('cancel').addEventListener("click", returnHome);
+
 
 function submit(e) {
   e.preventDefault();
-  console.log("Submitted Form ✔️");
+  var toastHTML = '<span>Ticked Booked! Please check your email for ticket confirmation.</span>';
+  form.reset();
+  M.updateTextFields();
+  M.toast({ html: toastHTML, displayLength: 4000, completeCallback: returnHome });
+}
+
+function returnHome(){
+  window.open('./index.html', "_self");
 }
