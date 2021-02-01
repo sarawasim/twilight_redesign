@@ -62,7 +62,7 @@ footer {
 
 footer a, 
 .movieCard a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
 
@@ -106,7 +106,7 @@ footer li {
 }
 
 .movieCard img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
