@@ -1,3 +1,5 @@
+const { validate } = require('postal-codes-js');
+
 /* Function to check email validity */
 
 function validateEmail(email) {
