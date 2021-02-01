@@ -1,17 +1,6 @@
 body {
-  background-color: black;
   color: white;
   text-align: center;
-}
-
-nav ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-nav a {
-  color: white;
-  /* text-decoration: none; */
 }
 
 .featuredMovie img {
@@ -22,6 +11,7 @@ nav a {
 .movies{
   display:flex;
 }
+
 .movieCard {
   display: flex;
   justify-content: center;
@@ -31,7 +21,7 @@ nav a {
 }
 
 .movieCard img {
-  height: 200px;
+  height: 275px;
   width: auto;
   margin:10px;
 }
@@ -40,14 +30,42 @@ nav a {
   margin-left:10px;
 }
 
-.movieCard a {
+.movieInfo a {
   display: block;
-  color: white;
+  color: rgba(73,13,102,1);;
 }
 
-@media screen and (max-width: 600px) {
+.button {
+  background-color: white;
+  border: none;
+  color:  rgba(73,13,102,1);
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button a{
+  color:  rgba(73,13,102,1);
+}
+
+
+@media screen and (max-width: 900px) {
   .movies {
     display: flex;
     flex-direction: column;
+  }
+
+  .movieCard {
+  width: 90%;
+}
+
+  #admissionPrices {
+    text-align: left;
+    margin-left: 20px;
   }
 }

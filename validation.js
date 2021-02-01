@@ -1,15 +1,17 @@
+const { validate } = require('postal-codes-js');
+
 /* Function to check email validity */
 
 function validateEmail(email) {
   const validFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   if (!validFormat) {
-    alert('Please enter a valid email');
+    // alert('Please enter a valid email');
     return false;
   }
   return true;
 }
 
-console.log(validateEmail('meganl.com'));
+// console.log(validateEmail('meganl.com'));
 
 /* Function to check card validity */
 
@@ -55,7 +57,7 @@ function validateCard(value) {
   return valid && accepted;
 }
 // console.log(validateCard('371612019985236')); // return true
-console.log(validateCard('371612013434536')); // return false
+// console.log(validateCard('371612013434536')); // return false
 
 /* Function to check expiry date validity */
 
@@ -72,7 +74,7 @@ function validateExpiry(date) {
   return true;
 }
 
-console.log(validateExpiry('02/21'));
+// console.log(validateExpiry('02/21'));
 
 /* Function to check CVV validity */
 
@@ -91,4 +93,4 @@ function validateCVV(creditCard, cvv) {
   return false;
 }
 
-console.log(validateCVV('371612013434536', '221'));
+// console.log(validateCVV('371612013434536', '221'));

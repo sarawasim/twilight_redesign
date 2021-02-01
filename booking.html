@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,64 +9,66 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Booking</title>
    </head>
    <body>
       <!-- <button><a href="./index.html"><img src="./images/Twilight.png" id="logo" alt="Twilight Drive-In Logo"></a></img></button> -->
       <div class="valign-wrapper row login-box">
-      <div class="col s20 pull-s1 m6 pull-m3 l4 pull-l4">
-         <div class="card hoverable">
-            <div class="card-content">
-               <span class="card-title">Book Ticket</span>
-               <div class="row">
-                  <form class="col s16" id="payment-form">
-                     <!-- Email -->
-                     <div class="row">
-                        <div class="input-field col s12">
-                           <i class="material-icons prefix">email</i>
-                           <input placeholder="Email" id="email" type="email" class="validate" required>
-                           <label for="email">Email</label>
+         <div class="col s20 pull-s1 m6 pull-m3 l4 pull-l4">
+            <div class="card hoverable">
+               <div class="card-content">
+                  <span class="card-title">Book Ticket</span>
+                  <div class="row">
+                     <form class="col s16" id="payment-form">
+                        <!-- Email -->
+                        <div class="row">
+                           <div class="input-field col s12">
+                              <i class="material-icons prefix">email</i>
+                              <input placeholder="Email" id="email" type="email" class="validate" required>
+                              <label for="email">Email</label>
+                           </div>
                         </div>
-                     </div>
-                     <!-- Card Holder Name -->
-                     <div class="row">
-                      <div class="input-field col s12">
-                         <i class="material-icons prefix">person</i>
-                         <input placeholder="Name" id="card-name" type="text" class="validate">
-                         <label for="card-name">Name</label>
-                      </div>
-                   </div>
-                     <!-- Card Number -->
-                     <div class="row">
-                        <div class="input-field col s12">
-                           <i class="material-icons prefix">credit_card</i>
-                           <input placeholder="1234 1234 1234 1234" id="card-number" type="text" class="validate" required>
-                           <label for="card-number">Card Number</label>
+                        <!-- Card Holder Name -->
+                        <div class="row">
+                           <div class="input-field col s12">
+                              <i class="material-icons prefix">person</i>
+                              <input placeholder="Name" id="card-name" type="text" class="validate">
+                              <label for="card-name">Name</label>
+                           </div>
                         </div>
-                     </div>
-                     <!-- Expiration & CVC -->
-                     <div class="row">
-                        <div class="input-field col s6">
-                           <i class="material-icons prefix">date_range</i>
-                           <input placeholder="MM/YY" id="expiry" type="text" class="validate" maxlength="5" required>
-                           <label for="expiry">Exp</label>
+                        <!-- Card Number -->
+                        <div class="row">
+                           <div class="input-field col s12">
+                              <i class="material-icons prefix">credit_card</i>
+                              <input placeholder="1234 1234 1234 1234" id="card-number" type="text" class="validate" required>
+                              <label for="card-number">Card Number</label>
+                           </div>
                         </div>
-                        <div class="input-field col s6">
-                           <i class="material-icons prefix">fingerprint</i>
-                           <input placeholder="CVC" id="cvc" type="text" class="validate" maxlength="4" required>
-                           <label for="cvc">CVC</label>
+                        <!-- Expiration & CVC -->
+                        <div class="row">
+                           <div class="input-field col s6">
+                              <i class="material-icons prefix">date_range</i>
+                              <input placeholder="MM/YY" id="expiry" type="text" class="validate" maxlength="5" required>
+                              <label for="expiry">Exp</label>
+                           </div>
+                           <div class="input-field col s6">
+                              <i class="material-icons prefix">fingerprint</i>
+                              <input placeholder="CVC" id="cvc" type="text" class="validate" maxlength="4" required>
+                              <label for="cvc">CVC</label>
+                           </div>
                         </div>
-                     </div>
-                     <!-- Country -->
-                     <div class="row">
-                        <div class="input-field col s12">
-                           <i class="material-icons prefix">language</i>
-                           <select name="country" id="country" required>
-                              <option value="" disabled selected>Choose your option</option>
-                              <option value="1">Canada</option>
-                              <option value="2">United States</option>
-                              <option value="3">United Kingdom</option>
-                           </select>
-                           <label for="country">Country</label>
+                        <!-- Country -->
+                        <div class="row">
+                           <div class="input-field col s12">
+                              <i class="material-icons prefix">language</i>
+                              <select name="country" id="country" required>
+                                 <option value="" disabled selected>Choose your option</option>
+                                 <option value="1">Canada</option>
+                                 <option value="2">United States</option>
+                                 <option value="3">United Kingdom</option>
+                              </select>
+                              <label for="country">Country</label>
+                           </div>
                         </div>
                         <!-- Zip Code-->
                         <div class="row">
@@ -79,28 +79,24 @@
                            </div>
                         </div>
                         <!-- Submit Button -->
-                        
                         <div class="row">
-                        <div class="card-action left-align col s6">
-                           <button class="btn red waves-effect waves-light" type="button" id="cancel">Cancel
+                           <div class="card-action left-align col s6">
+                              <button class="btn red waves-effect waves-light" type="button" id="cancel">Cancel
                               <i class="material-icons right">cancel</i>
                               </button>
                            </div>
-                           
                            <div class="card-action right-align col s6">
-                           <button class="btn waves-effect waves-light" id="pay-btn" type="submit" name="action">Book $30.00
-                           <i class="material-icons right">send</i>
-                           </button>
+                              <button class="btn waves-effect waves-light" id="pay-btn" type="submit" name="action">Book $30.00
+                              <i class="material-icons right">send</i>
+                              </button>
+                           </div>
                         </div>
-                        </div>
-                  </form>
+                     </form>
                   </div>
                </div>
             </div>
          </div>
       </div>
-
-      
       <!-- Compiled and minified JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
