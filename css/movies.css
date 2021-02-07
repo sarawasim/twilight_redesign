@@ -1,16 +1,7 @@
 /* Now Playing Movies */
 
 .movies{
-  display:flex;
-}
-
-.movieCard {
   display: flex;
-  justify-content: center;
-  padding: 10px;
-  text-align: left;
-  width: 50%;
-  padding-bottom: 5vh;
 }
 
 .seperator h2 {
@@ -18,30 +9,91 @@
   margin: 0;
 }
 
-.movieCard a {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-size: 1.3rem;
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 5vh;
+  border: solid 1px white;
 }
 
-.movieCard img {
-  height: 275px;
-  width: auto;
-  margin: 10px;
-  transition: transform .2s;;
+.poster {
+  object-fit: cover;
+  height: 285px;
+  opacity: 0.75;
 }
 
-.movieCard img:hover {
-    transform: scale(1.2);
+.movieText {
+  background-color: white;
+  color: black;
+  width: 500px;
+  height: 300px;
+  text-align: center;
 }
 
-.movieCard p {
-  margin-left:10px;
+.movieText ul { /* Not sure what is controlling the padding on the ul */
+  padding: 0;
+  list-style: none;
 }
 
-/* Book Now Button */
+.synopsis {
+  padding-top: 1vh;
+}
 
-.button {
+.genre {
+  font-style: italic;
+}
+
+.movieCard:hover {
+  transform: scale(1.2);
+}
+
+/* Dropdown Menu */
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+/* .button {
   background-color: white;
   border: none;
   color:  rgba(73,13,102,1);
@@ -57,13 +109,19 @@
 
 .movieCard a:hover {
     color: gold;
-}
+} */
 
 /* ------------------------------------------ */
 
 /* Coming Soon Movies Starts */
 
+.comingSoon {
+  display: flex;
+}
 
+.comingSoon .poster {
+  filter: grayscale(100%);
+}
 
 /* ------------------------------------------ */
 
@@ -76,7 +134,17 @@
   }
 
   .movieCard {
-    width: 90%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .movieCard img {
+    width: 100%;
     margin: auto;
-}
+  }
+
+  .movieText {
+    width: 100%;
+  }
 }
