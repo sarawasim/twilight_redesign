@@ -1,0 +1,17 @@
+/* Hero Image */
+
+.featuredMovie img {
+  height: auto;
+  width: 100%;
+}
+
+/* ------------------------------------------ */
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 900px) {
+  #admissionPrices {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
