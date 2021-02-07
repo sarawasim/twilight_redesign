@@ -49,10 +49,10 @@ const postalCode = document.getElementById('postal-code');
  * Show and hide COVID-19 precautions
  */
 // Get the modal and banner
-const modal = document.getElementById("covid-modal");
+const modal = document.getElementById("modal-content");
 const banner = document.getElementById("covid-19-banner");
 
-const readMore = document.getElementById("btn-read-more");
+const readMoreBtn = document.getElementById("btn-read-more");
 
 const closeBanner = document.getElementsByClassName("close-banner")[0];
 const exitModal = document.getElementsByClassName("close-modal")[0];
@@ -61,6 +61,8 @@ const exitModal = document.getElementsByClassName("close-modal")[0];
 readMore.onclick = function() {
   modal.style.display = "block";
 }
+
+readMoreBtn.addEventListener('click');
 
 // close the modal
 exitModal.onclick = function() {
