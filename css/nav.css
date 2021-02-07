@@ -21,6 +21,7 @@ nav {
     display: grid;
     grid-template-columns: 150px auto;
     block-size: fit-content;
+    flex-wrap: wrap; /* To help display properly on mobile view */
 }
 
 nav ul {
@@ -48,10 +49,43 @@ nav li a:hover {
     border-bottom: 3px solid  #ff4500;
 }
 
+/* Hamburger Menu */
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    display: none; /* Hides hamburger menu icon on desktop version */
+    color: #4c4c7c;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
 /* ------------------------------------------ */
 
 /* Mobile Media Queries */
 
 @media screen and (max-width: 900px) {
-   
+   nav ul {
+       display: none;
+       flex-direction: column;
+       width: 100%;
+   }
+
+   nav ul.show {
+       display: flex;
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .hamburger {
+       display: block;
+       align-items: right;
+       margin-right: 10px;
+   }
 }
