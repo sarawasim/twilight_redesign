@@ -34,10 +34,8 @@
   background-color: #bf0000; 
   color: white;
 }
-} /* BUG - If this bracket is removed then the modal will not load on start!
 
 /* The Modal (background) */
-/* BUG: background colour not showing up */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -47,8 +45,8 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(255, 1, 1); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
