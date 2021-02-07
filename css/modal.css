@@ -34,7 +34,8 @@
   background-color: #ED3833; 
   color: white;
 }
-}
+} /* BUG - If this bracket is removed then the modal will not load on start!
+
 /* The Modal (background) */
 /* BUG: background colour not showing up */
 .modal {
@@ -79,4 +80,8 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal li {
+  font-size: 1rem;
 }

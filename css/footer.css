@@ -8,6 +8,23 @@ footer {
     flex-direction: column;
 }
 
+/* Duplicated code from nav ul */
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    padding: 1vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    padding-top: 1.5vh;
+    list-style-type: none;
+}
+/* End of duplicated code from nav ul */
+
 #footerMenu {
     display: flex;
     flex-direction: column;
