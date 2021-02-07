@@ -2,7 +2,7 @@ var elem = document.querySelector('.tabs');
 var options = {};
 var instance = M.Tabs.init(elem, options);
 
-// For Form selects
+// For Form selects ...
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('select');
   M.FormSelect.init(elems, options);
