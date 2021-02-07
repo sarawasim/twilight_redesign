@@ -1,6 +1,8 @@
 /**
- * Show and hide COVID-19 precautions
+ * Handles displaying anf hiding COVID-19 related precautions
  */
+
+
 // Get the modal and banner
 const modal = document.querySelector('.modal');
 const banner = document.getElementById('covid-19-banner');
@@ -10,25 +12,34 @@ const readMoreBtn = document.getElementById('btn-read-more');
 const closeBanner = document.getElementsByClassName('close-banner')[0];
 const exitModal = document.getElementsByClassName('close-modal')[0];
 
-// show modal
+
+/**
+ * Shows the COVID-19 modal
+ */
 readMoreBtn.onclick = function () {
-  modal.style.display = 'block';
+	modal.style.display = 'block';
 };
 
-// close the modal
+/**
+ * Closes the COVID-19 modal
+ */
 exitModal.onclick = function () {
-  modal.style.display = 'none';
+	modal.style.display = 'none';
 };
 
-// BUG: Not working for some reason - should close modal when clicking elsewhere
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = 'none';
-//     console.log('clicked');
-//   }
-// };
+/**
+ * Closes modal when user clicks anywhere outside modal, excluding the 'Read More' button.
+ * @param {event} event - action or occurrence 
+ */
+window.onclick = function (event) {
+	if (!((event.target == readMoreBtn) || (modal.contains(event.target)))){
+		modal.style.display = 'none';
+	} 
+};
 
-// hide COVID banner
+/**
+ * Closes the COVID-19 banner
+ */
 closeBanner.onclick = function () {
-  banner.style.display = 'none';
+	banner.style.display = 'none';
 };
