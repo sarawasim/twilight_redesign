@@ -9,7 +9,9 @@
 
 #logo {
     min-height: 30px;
+    max-height: 55px;
     height: 5vh;
+    padding-top: 1vh;
     padding-left: 1vh;
 }
 
