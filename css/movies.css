@@ -1,6 +1,7 @@
 /* Now Playing Movies */
 
-.movies {
+.movies,
+.comingSoon {
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
@@ -52,17 +53,19 @@
 /* Dropdown Menu */
 
 .purchase { 
+  position: relative;
   padding-top: 5vh;
 }
 
 .dropbtn {
   background-color: #9B30FF;
   color: white;
+  min-width: 160px;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  min-width: 160px;
+  
 }
 
 .dropdown {
@@ -101,10 +104,6 @@
 
 /* Coming Soon Area */
 
-.comingSoon {
-  display: flex;
-}
-
 .comingSoon .poster {
   filter: grayscale(100%);
 }
@@ -114,7 +113,8 @@
 /* Mobile Media Queries */
 
 @media screen and (max-width: 900px) {
-  .movies {
+  .movies,
+  .comingSoon {
     display: flex;
     flex-direction: column;
   }
