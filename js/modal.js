@@ -2,7 +2,7 @@
  * Show and hide COVID-19 precautions
  */
 // Get the modal and banner
-const modal = document.getElementById('modal-content');
+const modal = document.querySelector('.modal');
 const banner = document.getElementById('covid-19-banner');
 
 const readMoreBtn = document.getElementById('btn-read-more');
@@ -13,21 +13,20 @@ const exitModal = document.getElementsByClassName('close-modal')[0];
 // show modal
 readMoreBtn.onclick = function () {
   modal.style.display = 'block';
-  console.log('Clicked!!');
 };
-
-// readMoreBtn.addEventListener('click');
 
 // close the modal
 exitModal.onclick = function () {
   modal.style.display = 'none';
 };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
+// BUG: Not working for some reason - should close modal when clicking elsewhere
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = 'none';
+//     console.log('clicked');
+//   }
+// };
 
 // hide COVID banner
 closeBanner.onclick = function () {
