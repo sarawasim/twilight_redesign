@@ -2,16 +2,16 @@ var elem = document.querySelector('.tabs');
 var options = {};
 var instance = M.Tabs.init(elem, options);
 
-// For Form selects ...
+// For Form selects .....
 document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('select');
-  M.FormSelect.init(elems, options);
+	var elems = document.querySelectorAll('select');
+	M.FormSelect.init(elems, options);
 });
 
 const form = document.getElementById('payment-form');
 
-form.addEventListener("submit", submit);
-document.getElementById('cancel').addEventListener("click", returnHome);
+form.addEventListener('submit', submit);
+document.getElementById('cancel').addEventListener('click', returnHome);
 
 
 /**
@@ -19,18 +19,18 @@ document.getElementById('cancel').addEventListener("click", returnHome);
  * @param {event} e - form event
  */
 function submit(e) {
-  e.preventDefault();
-  var toastHTML = '<span>Ticket Booked! Please check your email for ticket confirmation.</span>';
-  form.reset();
-  M.updateTextFields();
-  M.toast({ html: toastHTML, displayLength: 2000, completeCallback: returnHome });
+	e.preventDefault();
+	var toastHTML = '<span>Ticket Booked! Please check your email for ticket confirmation.</span>';
+	form.reset();
+	M.updateTextFields();
+	M.toast({ html: toastHTML, displayLength: 2000, completeCallback: returnHome });
 }
 
 /**
  * Returns user to home page
  */
 function returnHome(){
-  window.open('../index.html', "_self");
+	window.open('../index.html', '_self');
 }
 
 
