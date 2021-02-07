@@ -32,9 +32,9 @@ exitModal.onclick = function () {
  * @param {event} event - action or occurrence 
  */
 window.onclick = function (event) {
-	if (!((event.target == readMoreBtn) || (modal.contains(event.target)))){
+	if (event.target == modal) {
 		modal.style.display = 'none';
-	} 
+	}
 };
 
 /**
