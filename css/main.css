@@ -1,8 +1,54 @@
 /* Hero Image */
 
 .featuredMovie img {
-  height: auto;
   width: 100%;
+  height: 94vh;
+  object-fit: cover;
+  opacity: 0.5;
+  position: relative;
+  z-index: -1;
+}
+
+/* Hero Area Items */
+
+.heroButton {
+  background-color: #9B30FF;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: calc(10px + 6vh);
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.heroButton:hover {
+  background-color: #ff4500;
+}
+
+.featured {
+  position: absolute;
+  z-index: -1;
+}
+
+#featuredMovieTitle {
+  font-size: calc(10px + 10vh);
+  top: 48%;
+  left: 6%;
+}
+
+#featuredMovieName {
+  font-size: calc(10px + 3vh);
+  top: 65%;
+  left: 3.5%;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  z-index: 5;
 }
 
 /* ------------------------------------------ */
@@ -13,5 +59,13 @@
   #admissionPrices {
     text-align: left;
     margin-left: 20px;
+  }
+
+  .heroButton,
+  #featuredMovieTitle,
+  #featuredMovieName {
+    margin: auto;
+    left: 0;
+    right: 0;
   }
 }
