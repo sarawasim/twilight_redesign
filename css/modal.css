@@ -34,7 +34,6 @@
   background-color: #bf0000; 
   color: white;
 }
-} /* BUG - If this bracket is removed then the modal will not load on start!
 
 /* The Modal (background) */
 /* BUG: background colour not showing up */
@@ -48,7 +47,7 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
