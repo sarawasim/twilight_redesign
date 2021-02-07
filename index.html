@@ -14,14 +14,12 @@
    </head>
    <body>
       <div class="wrapper">
-         <!-- <header>
-            <h1>Twilight Drive-In</h1>
-            </header> -->
          <nav>
-            <a href="./index.html"><img src="./img/logo/Twilight.png" id="logo" alt="Twilight Drive-In Logo"></a></img>
+            <a href="./index.html"><img src="./img/logo/twilight.png" id="logo" alt="Twilight Drive-In Logo"></a></img>
             <ul>
                <li><a href="index.html">Home</a></li>
                <li><a href="#nowPlaying">Movies</a></li>
+               <li><a href="#preview">Upcoming</a></li>
                <li><a href="#admissionPrices">Admissions</a></li>
                <li><a href="https://bit.ly/3tD0SOi" target="_blank">Directions</a></li>
             </ul>
@@ -65,31 +63,111 @@
             </section>
 
             <!--Now Showing Section-->
-            <div class="seperator">
+            <div id="nowPlaying" class="seperator">
                <h2>NOW PLAYING</h2>
             </div>
+
             <section class="movies">
                <div class="movieCard">
-                  <div>
-                     <img src="./img/movies/posters/the_witches.jpg" alt="The Witches Poster">
-                     <a href="./pages/booking.html" class="button">BOOK NOW</a>
-                  </div>
-                  <div class="movieInfo">
-                     <h3>2020 / PG / 151 MINUTES / ACTION, ADVENTURE</h3>
-                     <p> Based on Roald Dahl's 1983 classic book 'The Witches', the story tells the scary, funny and imaginative tale of a seven year old boy who has a run in with some real life witches!</p>
-                  </div>
+                  <img class="poster" src="./img/movies/posters/the_witches_b.jpg" alt="The Witches Poster">
+                  <span class="movieText">
+                     <ul>
+                        <li><h3>The Witches</h3></li>
+                        <li class="genre">2020 / PG / 151 MINUTES / ACTION, ADVENTURE</li>
+                        <li class="synopsis">Based on Roald Dahl's 1983 classic book 'The Witches', the story tells the scary, funny and imaginative tale of a seven year old boy who has a run in with some real life witches!</li>
+                        <li class="purchase">
+                           <div class="dropdown">
+                              <button class="dropbtn">Purchase Ticket</button>
+                              <div class="dropdown-content">
+                              <a href="/pages/booking.html"">February 19, 2021 at 7:00pm</a>
+                              <a href="/pages/booking.html"">February 20, 2021 at 8:00pm</a>
+                              <a href="/pages/booking.html"">February 21, 2021 at 8:00pm</a>
+                              </div>
+                            </div>
+                        </li>
+                     </ul>
+                  </span>
                </div>
                <div class="movieCard">
-                  <div>
-                     <img src="./img/movies/posters/the_little_things.jpg" alt="The Little Things Poster">
-                     <a href="./pages/booking.html" class="button">BOOK NOW</a>
-                  </div>
-                  <div class="movieInfo">
-                     <h3>2020 / PG / 151 MINUTES / ACTION, ADVENTURE</h3>
-                     <p>Deke, a burnt-out Kern County, CA deputy sheriff teams up with Baxte, a crack LASD detective, to nab a serial killer. Deke's nose for the "little things" proves eerily accurate, but his willingness to circumvent the rules embroils Baxter in a soul-shattering dilemma. Meanwhile, Deke must wrestle with a dark secret from his past.</p>
-                  </div>
+                  <img class="poster" src="./img/movies/posters/the_croods.jpg" alt="The Croods Poster">
+                  <span class="movieText">
+                     <ul>
+                        <li><h3>The Croods</h3></li>
+                        <li class="genre">2020 / G / 135 MINUTES / ADVENTURE, COMEDY, FAMILY</li>
+                        <li class="synopsis">The prehistoric family the Croods are challenged by a rival family the Bettermans, who claim to be better and more evolved.</li>
+                        <li class="purchase">
+                           <div class="dropdown">
+                              <button class="dropbtn">Purchase Ticket</button>
+                              <div class="dropdown-content">
+                              <a href="./pages/booking.html">February 19, 2021 at 7:00pm</a>
+                              <a href="/pages/booking.html"">February 20, 2021 at 8:00pm</a>
+                              <a href="/pages/booking.html"">February 21, 2021 at 8:00pm</a>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </span>
+               </div>
+               <div class="movieCard">
+                  <img class="poster" src="./img/movies/posters/the_little_things_b.jpg" alt="The Little Things Poster">
+                  <span class="movieText">
+                     <ul>
+                        <li><h3>The Little Things</h3></li>
+                        <li class="genre">2021 / 14A / 127 MINUTES / ACTION, ADVENTURE</li>
+                        <li class="synopsis">Deke, a burnt-out Kern County, CA deputy sheriff teams up with Baxte, a crack LASD detective, to nab a serial killer.</li>
+                        <li class="purchase">
+                           <div class="dropdown">
+                              <button class="dropbtn">Purchase Ticket</button>
+                              <div class="dropdown-content">
+                              <a href="/pages/booking.html"">February 19, 2021 at 7:00pm</a>
+                              <a href="/pages/booking.html"">February 20, 2021 at 8:00pm</a>
+                              <a href="/pages/booking.html"">February 21, 2021 at 8:00pm</a>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </span>
                </div>
             </section>
+
+            <!--Coming Soon Section-->
+
+            <div id="preview" class="seperator">
+               <h2>COMING SOON</h2>
+            </div>
+
+            <section class="comingSoon">
+            <div class="movieCard">
+               <img class="poster" src="./img/movies/posters/the_witches_b.jpg" alt="The Witches Poster">
+               <span class="movieText">
+                  <ul>
+                     <li><h3>The Witches</h3></li>
+                     <li class="genre">2020 / PG / 151 MINUTES / ACTION, ADVENTURE</li>
+                     <li class="synopsis">Based on Roald Dahl's 1983 classic book 'The Witches', the story tells the scary, funny and imaginative tale of a seven year old boy who has a run in with some real life witches!</li>
+                  </ul>
+               </span>
+            </div>
+            <div class="movieCard">
+               <img class="poster" src="./img/movies/posters/the_croods.jpg" alt="The Croods Poster">
+               <span class="movieText">
+                  <ul>
+                     <li><h3>The Croods</h3></li>
+                     <li class="genre">2020 / G / 135 MINUTES / ADVENTURE, COMEDY, FAMILY</li>
+                     <li class="synopsis">The prehistoric family the Croods are challenged by a rival family the Bettermans, who claim to be better and more evolved.</li>
+                  </ul>
+               </span>
+            </div>
+            <div class="movieCard">
+               <img class="poster" src="./img/movies/posters/the_little_things_b.jpg" alt="The Little Things Poster">
+               <span class="movieText">
+                  <ul>
+                     <li><h3>The Little Things</h3></li>
+                     <li class="genre">2021 / 14A / 127 MINUTES / ACTION, ADVENTURE</li>
+                     <li class="synopsis">Deke, a burnt-out Kern County, CA deputy sheriff teams up with Baxte, a crack LASD detective, to nab a serial killer. Deke's nose for the "little things" proves eerily accurate, but his willingness to circumvent the rules embroils Baxter in a soul-shattering dilemma. Meanwhile, Deke must wrestle with a dark secret from his past.</li>
+                  </ul>
+               </span>
+            </div>
+         </section>
 
             <!--Admission Prices Section-->
             <section id="admissionPrices">
@@ -105,12 +183,13 @@
             <ul id="footerMenu">
                <li>Location</li>
                <li>3350 260 Street, Fraser Hwy, Langley Twp, BC V4W 2B1</li>
+               <li>604-856-5063</li>
             </ul>
             <ul>
-               <li><img class="icon" src="./img/svg/social/facebook-with-circle.svg" alt="Facebook"></li>
-               <li><img class="icon" src="./img/svg/social/instagram-with-circle.svg" alt="Instagram"></li>
-               <li><img class="icon" src="./img/svg/social/linkedin-with-circle.svg" alt="LinkedIn"></li>
-               <li><img class="icon" src="./img/svg/social/mail-with-circle.svg" alt="Mail"></li>
+               <li><a href="https://www.facebook.com/twilightdrivein" target="_blank"><img class="icon" src="./img/svg/social/facebook-with-circle.svg" alt="Facebook"></li>
+               <li><a href="https://www.instagram.com/explore/tags/twilightdrivein/" target="_blank"><img class="icon" src="./img/svg/social/instagram-with-circle.svg" alt="Instagram"></a></li>
+               <li><a href="https://www.linkedin.com/in/jay-daulat-150771107/?originalSubdomain=ca" target="_blank"><img class="icon" src="./img/svg/social/linkedin-with-circle.svg" alt="LinkedIn"></a></li>
+               <li><a href="mailto:twilightdrivein@shaw.ca"><img class="icon" src="./img/svg/social/mail-with-circle.svg" alt="Mail"></a></li>
             </ul>
          </footer>
       </div>

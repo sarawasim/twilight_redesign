@@ -9,8 +9,18 @@
 
 #logo {
     min-height: 30px;
+    max-height: 55px;
     height: 5vh;
+    padding-top: 1vh;
     padding-left: 1vh;
+}
+
+nav {
+    background: white;
+    height: 4vh;
+    display: grid;
+    grid-template-columns: 150px auto;
+    block-size: fit-content;
 }
 
 nav ul {
@@ -26,14 +36,6 @@ nav li {
     font-size: 1.4rem;
     padding-top: 1.5vh;
     list-style-type: none;
-}
-
-nav {
-    background: white;
-    height: 4vh;
-    display: grid;
-    grid-template-columns: 150px auto;
-    block-size: fit-content;
 }
 
 nav li a {
