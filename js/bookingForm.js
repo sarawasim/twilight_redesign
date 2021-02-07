@@ -1,6 +1,5 @@
 /* Initialize parameters */
 let options = {};
-let ticketCount = 2;
 const elem = document.querySelector('.tabs');
 const instance = M.Tabs.init(elem, options);
 const form = document.getElementById('payment-form');
@@ -13,16 +12,16 @@ document.addEventListener('DOMContentLoaded', initialize);
 
 
 /**
- * Initializes bookings page to use materialize
+ * Initializes bookings page form to use materialize
  */
 function initialize () {
 	const elems = document.querySelectorAll('select');
 	M.FormSelect.init(elems, options);
 }
 
-
 /**
- * Resets the payment form on submission and redirects user to main page
+ * Resets the payment form on submission, updates ticket count,
+ * and redirects user to main page
  * @param {event} e - form event
  */
 function submit(e) {
@@ -31,6 +30,8 @@ function submit(e) {
 	form.reset();
 	M.updateTextFields();
 	M.toast({ html: toastHTML, displayLength: 2000, completeCallback: returnHome });
+
+	updateTicketCount();
 }
 
 /**
@@ -40,9 +41,18 @@ function returnHome() {
 	window.open('../index.html', '_self');
 }
 
-function verifyTicketCount(){
-
+/**
+ * Updates ticket count and persists the value for the given session
+ */
+function updateTicketCount(){
+	if(sessionStorage.getItem('ticketCount') === null) {
+		sessionStorage.setItem('ticketCount', '3');
+	} else {
+		let ticketCount = parseInt(sessionStorage.getItem('ticketCount'), 10);
+		sessionStorage.setItem('ticketCount', (ticketCount - 1).toString(10));
+	}
 }
+
 
 
 
