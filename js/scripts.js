@@ -28,13 +28,8 @@ function submit(e) {
 /**
  * Returns user to home page
  */
-<<<<<<< HEAD
-function returnHome(){
-	window.open('../index.html', '_self');
-=======
 function returnHome() {
-  window.open('../index.html', '_self');
->>>>>>> 22a16403e4ecaceac78a8a5bffb990c70c7fddb0
+	window.open('../index.html', '_self');
 }
 
 /**
