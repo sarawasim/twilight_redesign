@@ -8,41 +8,42 @@
 /* Navigation */
 
 #logo {
-    width: 200px;
+    min-height: 30px;
+    height: 5vh;
+    padding-left: 1vh;
 }
 
-nav ul {
+ul {
     display: flex;
     justify-content: center;
-    align-content: center;
     margin: 0;
+    padding: 0;
 }
 
-nav li {
+li {
     padding: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.1rem;
-    margin: 0;
+    font-size: 1.4rem;
     padding-top: 1.5vh;
     list-style-type: none;
 }
 
 nav {
     background: white;
-    height: 6vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh;
+    height: 4vh;
+    display: grid;
+    grid-template-columns: 150px auto;
+    block-size: fit-content;
 }
 
-nav a {
-    color: #757575;
+nav li a {
+    color:#4c4c7c;
     text-decoration: none;
 }
 
-nav a:hover {
+nav li a:hover {
     color: #353535;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid  #ff4500;
 }
 
 /* ------------------------------------------ */
