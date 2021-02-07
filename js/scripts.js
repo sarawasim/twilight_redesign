@@ -10,9 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const form = document.getElementById('payment-form');
 
-form.addEventListener("submit", submit);
-document.getElementById('cancel').addEventListener("click", returnHome);
-
+form.addEventListener('submit', submit);
+document.getElementById('cancel').addEventListener('click', returnHome);
 
 /**
  * Resets the payment form on submission and redirects user to main page
@@ -29,10 +28,9 @@ function submit(e) {
 /**
  * Returns user to home page
  */
-function returnHome(){
-  window.open('../index.html', "_self");
+function returnHome() {
+  window.open('../index.html', '_self');
 }
-
 
 /**
  * @Megan - You can do form validation here
@@ -44,38 +42,3 @@ const CVC = document.getElementById('cvc');
 const countryCode = document.getElementById('country');
 const postalCode = document.getElementById('postal-code');
 
-
-/**
- * Show and hide COVID-19 precautions
- */
-// Get the modal and banner
-const modal = document.getElementById("modal-content");
-const banner = document.getElementById("covid-19-banner");
-
-const readMoreBtn = document.getElementById("btn-read-more");
-
-const closeBanner = document.getElementsByClassName("close-banner")[0];
-const exitModal = document.getElementsByClassName("close-modal")[0];
-
-// show modal
-readMore.onclick = function() {
-  modal.style.display = "block";
-}
-
-readMoreBtn.addEventListener('click');
-
-// close the modal
-exitModal.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-// hide COVID banner
-closeBanner.onclick = function() {
-  banner.style.display = "none";
-}

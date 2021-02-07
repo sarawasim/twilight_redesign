@@ -1,0 +1,78 @@
+/* Now Playing Movies */
+
+.movies{
+  display:flex;
+}
+
+.movieCard {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: left;
+  width: 50%;
+  padding-bottom: 5vh;
+}
+
+.movieCard a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.movieCard img {
+  height: 275px;
+  width: auto;
+  margin:10px;
+  transition: transform .2s;;
+}
+
+.movieCard img:hover {
+    transform: scale(1.2);
+}
+
+.movieCard p {
+  margin-left:10px;
+}
+
+/* Book Now Button */
+
+.button {
+  background-color: white;
+  border: none;
+  color:  rgba(73,13,102,1);
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.movieCard a:hover {
+    color: gold;
+
+}
+
+/* ------------------------------------------ */
+
+/* Coming Soon Movies Starts */
+
+
+
+/* ------------------------------------------ */
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 900px) {
+  .movies {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movieCard {
+    width: 90%;
+    margin: auto;
+}
+}
