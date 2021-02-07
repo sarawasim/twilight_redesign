@@ -1,7 +1,7 @@
 /* The Covid-19 Banner */
 #covid-19-banner {
   padding: 0.5em 1em;
-  background-color: #ED3833;
+  background-color:#bf0000;
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -31,7 +31,7 @@
 }
 
 #btn-read-more:hover {
-  background-color: #ED3833; 
+  background-color: #bf0000; 
   color: white;
 }
 } /* BUG - If this bracket is removed then the modal will not load on start!
