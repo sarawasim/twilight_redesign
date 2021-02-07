@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="./css/footer.css">
       <link rel="stylesheet" href="./css/main.css">
       <link rel="stylesheet" href="./css/movies.css">
-
+      <link rel="icon" type="image/png" href="./img/logo/Star Favicon.png">
    </head>
    <body>
       <div class="wrapper">
@@ -21,7 +21,9 @@
             <a href="./index.html"><img src="./img/logo/Twilight.png" id="logo" alt="Twilight Drive-In Logo"></a></img>
             <ul>
                <li><a href="index.html">Home</a></li>
-               <li><a href="#admissionPrices">Admission Prices</a></li>
+               <li><a href="#nowPlaying">Movies</a></li>
+               <li><a href="#admissionPrices">Admissions</a></li>
+               <li><a href="https://bit.ly/3tD0SOi" target="_blank">Directions</a></li>
             </ul>
          </nav>
          <!-- Covid banner -->
@@ -52,13 +54,20 @@
                   while the show is on to reduce crowds.</p>
             </div>
          </div>
+
          <!-- Body content -->
          <main>
             <section class="featuredMovie">
-               <!-- <h2>Featured Movie</h2> -->
+               <h1 id="featuredMovieTitle" class="featured">WW84</h1>
+               <h2 id="featuredMovieName" class="featured">WONDER WOMAN 1984</h2>
                <img src="./img/movies/hero/ww84-2000x1404.jpg" alt="Wonder Woman 1984 Poster">
+               <button class="heroButton" onClick="window.location.href='./pages/booking.html';">BOOK NOW</button>
             </section>
-            <h2>NOW PLAYING</h2>
+
+            <!--Now Showing Section-->
+            <div class="seperator">
+               <h2>NOW PLAYING</h2>
+            </div>
             <section class="movies">
                <div class="movieCard">
                   <div>
@@ -81,6 +90,8 @@
                   </div>
                </div>
             </section>
+
+            <!--Admission Prices Section-->
             <section id="admissionPrices">
                <h2>ADMISSION PRICES</h2>
                <p>1 VEHICLE WITH 1 OR 2 PEOPLE: $30.00</p>
@@ -91,20 +102,21 @@
             </section>
          </main>
          <footer>
-            <ul>
-               <!-- <li><a href="#">About Us</li></a>
-                  <li><a href="#">Contact Us</li></a> -->
+            <ul id="footerMenu">
+               <li>Location</li>
                <li>3350 260 Street, Fraser Hwy, Langley Twp, BC V4W 2B1</li>
-               <li><img src="./img/svg/social/facebook-with-circle.svg" height="25" width="25" alt="Instagram"></li>
-               <li><img src="./img/svg/social/instagram-with-circle.svg" height="25" width="25" alt="Facebook"></li>
-               <!-- <li><img src="./img/svg/social/linkedin-with-circle.svg" height="25" width="25" alt="LinkedIn"></li> -->
-               <!-- <li><img src="./img/svg/social/mail-with-circle.svg" height="25" width="25" alt="Mail"></li> -->
+            </ul>
+            <ul>
+               <li><img class="icon" src="./img/svg/social/facebook-with-circle.svg" alt="Facebook"></li>
+               <li><img class="icon" src="./img/svg/social/instagram-with-circle.svg" alt="Instagram"></li>
+               <li><img class="icon" src="./img/svg/social/linkedin-with-circle.svg" alt="LinkedIn"></li>
+               <li><img class="icon" src="./img/svg/social/mail-with-circle.svg" alt="Mail"></li>
             </ul>
          </footer>
       </div>
+
    <!-- Compiled and minified JavaScript -->
       <script src="./js/modal.js"></script>
-
    </body>
 </html>
 

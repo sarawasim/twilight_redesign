@@ -1,30 +1,41 @@
 /* Footer */
 
 footer {
-    height: 15vh;
+    min-height: 150px;
+    height: 20vh;
     background: #0a0613;
+    display: flex;
+    flex-direction: column;
 }
 
-footer a {
-    text-decoration: none;
-}
-
-footer a:hover
-{
-    color: #959595;
-    border-bottom: 3px solid;
-}
-
+/* Duplicated code from nav ul */
 footer ul {
     display: flex;
-    width: fit-content;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 2vh;
-    
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 footer li {
-    list-style: none;
-    padding: 5px;
+    padding: 1vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    padding-top: 1.5vh;
+    list-style-type: none;
+}
+/* End of duplicated code from nav ul */
+
+#footerMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+#footerMenu li{
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
 }
