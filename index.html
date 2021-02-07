@@ -6,9 +6,11 @@
       <title>Twilight Drive-In</title>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/nav.css">
+      <link rel="stylesheet" href="./css/modal.css">
       <link rel="stylesheet" href="./css/footer.css">
       <link rel="stylesheet" href="./css/main.css">
       <link rel="stylesheet" href="./css/movies.css">
+
    </head>
    <body>
       <div class="wrapper">
@@ -22,6 +24,35 @@
                <li><a href="#admissionPrices">Admission Prices</a></li>
             </ul>
          </nav>
+         <!-- Covid banner -->
+         <aside id="covid-19-banner"><span class="notice-content"><strong>COVID-19 Update:</strong> Please read our current COVID
+               related precautions</span> <button id="btn-read-more">Read More &#10140;</button> <span
+               class="close close-banner">&times;</span></aside>
+         
+         <!-- The Modal -->
+         <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <span class="close close-modal">&times;</span>
+               <h2>COVID-19 Update - December 8, 2020</h2>
+               <p>Each showing is limited to <strong>50</strong> vehicles.<br>
+                  Single feature admissions only. <br>
+                  Gates open <strong> 20 minutes prior</strong> to the start of showing.<br>
+                  Please stay inside your vehicles and not congregate together.<br>
+                  If you feel ill or were outiside of Canada within the last 14 days, please stay home.
+               </p>
+               <p> Please note: The concession is temporarily <strong>closed.</strong></p>
+               <h3>Washroom Rules</h3>
+               <ul>
+                  <li>Washrooms are limited to 6 people at a time</li>
+                  <li>Please wait outside 2m apart</li>
+                  <li>Face masks are required in the washrooms</li>
+               </ul>
+               <p>The washrooms are cleaned and sanitized regularly throughout the evening. Please consider using the washrooms
+                  while the show is on to reduce crowds.</p>
+            </div>
+         </div>
+         <!-- Body content -->
          <main>
             <section class="featuredMovie">
                <!-- <h2>Featured Movie</h2> -->
@@ -71,6 +102,9 @@
             </ul>
          </footer>
       </div>
+   <!-- Compiled and minified JavaScript -->
+      <script src="./js/modal.js"></script>
+
    </body>
 </html>
 

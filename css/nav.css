@@ -11,14 +11,14 @@
     width: 200px;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 0;
 }
 
-li {
+nav li {
     padding: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.1rem;

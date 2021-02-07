@@ -13,7 +13,6 @@ const form = document.getElementById('payment-form');
 form.addEventListener('submit', submit);
 document.getElementById('cancel').addEventListener('click', returnHome);
 
-
 /**
  * Resets the payment form on submission and redirects user to main page
  * @param {event} e - form event
@@ -29,10 +28,14 @@ function submit(e) {
 /**
  * Returns user to home page
  */
+<<<<<<< HEAD
 function returnHome(){
 	window.open('../index.html', '_self');
+=======
+function returnHome() {
+  window.open('../index.html', '_self');
+>>>>>>> 22a16403e4ecaceac78a8a5bffb990c70c7fddb0
 }
-
 
 /**
  * @Megan - You can do form validation here
@@ -43,5 +46,4 @@ const expiry = document.getElementById('expiry');
 const CVC = document.getElementById('cvc');
 const countryCode = document.getElementById('country');
 const postalCode = document.getElementById('postal-code');
-
 
