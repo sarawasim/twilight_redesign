@@ -35,7 +35,6 @@
   text-align: center;
 }
 
-
 .movieText ul { /* Not sure what is controlling the padding on the ul--extra 40px left */
   padding: 0;
   list-style: none;
@@ -43,7 +42,6 @@
 
 .synopsis {
   padding-top: 1vh;
- 
 }
 
 .genre {
@@ -132,5 +130,9 @@
 
   .movieText {
     width: 100%;
+  }
+
+  .synopsis {
+    text-align: left;
   }
 }
